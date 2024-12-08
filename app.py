@@ -27,7 +27,7 @@ blogData=[{
 
 @app.route("/")
 def home():
-    return render_template('home.html', posts=blogData, title="Home")
+    return render_template('home.html', posts=blogData, title="Blog Post")
 @app.route("/about")
 def about():
     return render_template('about.html', title="About")
