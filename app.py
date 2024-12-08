@@ -27,18 +27,18 @@ blogData=[{
 
 @app.route("/")
 def home():
-    return render_template('home.html', posts=blogData, title="Blog Post")
+    return render_template('home.html', posts=blogData, title="Home")
 @app.route("/about")
 def about():
     return render_template('about.html', title="About")
 
 @app.route("/login")
 def login():
-    return render_template('./authentication/login.html')
+    return render_template('./authentication/login.html', title="Login")
 
 @app.route("/register")
 def register():
-    return render_template('./authentication/register.html')
+    return render_template('./authentication/register.html', title="Register")
 
 
 if __name__=='__main__':
